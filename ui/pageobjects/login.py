@@ -9,7 +9,7 @@ class Login:
     def fill_registered_customers(self, email_address, password):
 
         self.driver.webdriver.find_element(By.CSS_SELECTOR, "#email").send_keys(email_address)
-        self.driver.webdriver.find_element(By.CSS_SELECTOR, "#password").send_keys(password)
+        self.driver.webdriver.find_element(By.CSS_SELECTOR, "#pass").send_keys(password)
 
 
 
