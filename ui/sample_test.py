@@ -2,7 +2,7 @@ import logging
 import pytest
 
 from pageobjects.login import Login
-from pageobjects.main_storefront import Storefront
+from pageobjects.storefront import Storefront
 
 from webdriverbase import BaseDriver
 
