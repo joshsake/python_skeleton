@@ -1,0 +1,2 @@
+# This is where our core module would be able to setup test runs
+# regardless of what type of test(s) was going to be ran
