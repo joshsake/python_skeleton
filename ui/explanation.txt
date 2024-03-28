@@ -1,0 +1,2 @@
+This is where we would have all of our UI specific files.
+Page objects, web selectors, WebDriver extensions or anything Webdriver related are good examples.

@@ -1,2 +1,5 @@
-# This is where our core module would be able to setup test runs
-# regardless of what type of test(s) was going to be ran
+This is where our code that supported general test setup and shared functionality would go.
+We would keep this separate from specific or targeted areas of testing.
+
+Some good examples would be functionality for reporting, integration with JIRA/Azure DevOps, or anything that is needed
+for CI/CD integration.

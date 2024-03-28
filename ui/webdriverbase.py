@@ -1,18 +1,21 @@
 import datetime
 from selenium import webdriver
-
-chrome_options = webdriver.ChromeOptions()
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 class BaseDriver:
 
     def __init__(self):
-        self.instance = webdriver.Chrome(desired_capabilities=chrome_options.to_capabilities(),
-                                         executable_path='../chromedriver.exe')
+        chrome_options = ChromeOptions()
+        chrome_options.add_argument("--start-maximized")
+        chrome_driver = ChromeDriverManager().install()
+        self.webdriver = webdriver.Chrome(service=Service(chrome_driver, options=chrome_options))
 
     def navigate(self, url):
         if isinstance(url, str):
-            self.instance.get(url)
+            self.webdriver.get(url)
         else:
             raise TypeError("URL must be a string.")
 
@@ -20,4 +23,4 @@ class BaseDriver:
         current_time = datetime.datetime.now()
         date_string = current_time.strftime("_%m_%d_%Y_%H%M%S")
         file_name = test_name + date_string + '.png'
-        self.instance.save_screenshot(file_name)
+        self.webdriver.save_screenshot(file_name)
