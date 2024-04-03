@@ -1,0 +1,2 @@
+This is how we could setup our test project that uses feature files to bring all of our available
+testing platforms together.
