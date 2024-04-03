@@ -1,4 +1,5 @@
 This is not a thorough or complete implementation of a framework, but instead an explanation of the different components that can be created.
+Ideally, each of the components - core, api, ui, and db can have their own respective packages or we could start by creating a core package with shared api, ui and db functionality.
 
 Please refer to the "Framework ideas.pdf" where I put together some examples of how I have created frameworks in the past.
 
