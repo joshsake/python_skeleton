@@ -1,8 +1,8 @@
 This is not a thorough or complete implementation of a framework, but instead a brainstorm of different components that 
 can be created. 
 
-Ideally, each of the components - core, api, ui, and db can have their own respective packages or we could start by 
-creating a core package with shared api, ui and db functionality. Then any new test project can simply import our shared
+Ideally, each of the components - core, api, ui, and db can have their own respective packages OR we could start by 
+creating a core package with shared api, ui, and db functionality. Any new test project can then simply import our shared
 package(s).
 
 Please refer to the "Framework ideas.pdf" where I put together some examples of how I have created frameworks in the past.
