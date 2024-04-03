@@ -12,3 +12,12 @@ UI is further along so after installing necessary packages and you want to run a
 3. Enter "pytest" into your terminal and press Enter
 4. Test for demo site "https://magento.softwaretestingboard.com/" will be ran
 5. Screenshot will be saved to ui folder
+
+
+References:
+
+https://docs.pytest.org/en/8.0.x/
+
+https://behave.readthedocs.io/en/latest/
+
+https://plugins.jetbrains.com/plugin/9164-gherkin
